@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+
+/* HTML and Body styles */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+    background-color: #151320;
+    height: auto;
+    width: auto;
+
+}
+body {
+    font-family: 'Poppins',sans-serif;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #cfd9db;
+
+}
+.title {
+    text-align: center;
+    position: relative;
+    bottom: 14vh;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:
+        0 0 0.3em #f46b30,
+        0 0 0.6em #f46b30,
+        0 0 1.2em #f46b30,
+        0 0 2.4em #f46b30,
+        0 0 4.8em #f46b30,
+        0 0 9.6em #f46b30,
+        0 0 19.2em #f46b30;;
+
+}
+p {
+    text-indent: 10%;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+}
+.tnt-logo {
+    position: relative;
+    bottom: 8vh;
+    border-radius: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-pic {
+    display: block;
+    position: relative;
+    top: 0;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    width: 50vw;
+}
+
+/* customization */
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 80px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.card1{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+}
+.card2{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+}
+.card3{
+    background-image: linear-gradient(
+        135deg,
+        #ffab1d,
+        #f8501c
+    );
+}
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: black;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* Map */
+
+.map {
+    display: flex;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 35vw;
+}
+
+
+/* Horizontal Nav Style */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul.homebar {
+    padding: 20px;
+    border: 1px solid white;
+    font-family: "Chivo Mono", monospace;
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+  }
+  ul li{
+    list-style: none;
+  }
+  ul li a{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+  }
+  ul:hover{
+    border: 3px solid #f46b30;
+  }
+  ul:hover li a {
+    color: #f46b30;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+  ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+  }
+
+ /* Footer Styles */
+
+footer{
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: auto;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+}
+
+div.footer-aspect {
+    font-size: 18pt;
+    font-family: serif;
+    color: white;
+    line-height: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px 0px 50px;
+}
+
+
+/* Small Screen size */
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 670px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+    }
+    iframe {
+        height: 38vh;
+        width: 44vw;
+    }
+    img {
+        height: 38vh;
+        width: 90vw;
+    }
+  }

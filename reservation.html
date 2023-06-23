@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reservation.css">
+  <title>Make a Reservation</title>
+</head>
+    <div class="wrapper">
+        <body>
+        <header class="end">
+                <a href="./index.html"><img class="tnt-logo" src="logo.png" alt="TnT logo"></a>
+
+            <nav class="horizontal">
+            <ul class="homebar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </nav>
+        </header>
+
+
+        <div id="reservation-modal">
+            <div id="reservation-form">
+                <h2>Reservation Form</h2>
+                <form action="index.html">
+                    <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" required>
+                    
+                        <label for="message">Special Requests:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    
+                        <a href="index.html" class="button">Submit</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-aspect">
+                    <pre>
+                    <p><em>Location:</em></p>
+                    <p>222 W 5th Ave</p>
+                    <p>New York, NY 10016</p>
+                    </pre>
+                </div>
+                <div class="footer-aspect">
+                    <pre>
+                    <p><em>Hours:</em></p>
+                    <p>Mon-Thurs 2pm-12am</p>
+                    <p>Fri-Sat 2pm-4am</p>
+                    <P>Sun 11am-2am</P>
+                    </pre>
+                </div>
+            </div>    
+        </footer>
+        </body>
+    </div>
+</html>

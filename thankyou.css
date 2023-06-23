@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+
+body {
+    background-color: #151320;
+}
+
+h1, h2 {
+    color: #f46b30;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+}
+img {
+   display: flex;
+   position: relative;
+   top: 5vh;
+   margin: 0 auto;
+   border-radius: 280px;
+   width: 300px;
+   height: 300px;
+}
+
+/* Horizontal Nav Style */
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul.homebar {
+    padding: 15px;
+    border: 1px solid white;
+    font-family: "Chivo Mono", monospace;
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+  }
+  ul li{
+    list-style: none;
+  }
+  ul li a{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+  }
+  ul:hover{
+    border: 3px solid #f46b30;
+  }
+  ul:hover li a {
+    color: #f46b30;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+  ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+  }
+
+   /* Footer Styles */
+
+footer{
+    position: relative;
+    top: 13vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+    height: auto;
+    width: auto;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    position: relative;
+}
+
+div.footer-aspect {
+    font-size: 18pt;
+    font-family: serif;
+    color: white;
+    line-height: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px 0px 50px;
+}
